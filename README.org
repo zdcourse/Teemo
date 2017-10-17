@@ -1,7 +1,4 @@
 * Teemo
-
-
-* Teemo
 Sqoop和hive练习
 
 课程的要求

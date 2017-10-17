@@ -10,9 +10,9 @@ Sqoop和hive练习
 
 
 ** 如何去做
-	1. 安装Cloudera Docker 环境
-
-    2. 导入数据
+    1. 安装Cloudera Docker 环境
+	
+    2. 导入数据
 		数据在：https://github.com/datacharmer/test_db
 		导入数据到 Cloudera 的 Mysql 中
 		#+BEGIN_SRC shell

@@ -98,16 +98,16 @@ Sqoop 和 hive 练习
 
 
 ** 如何去做
-    - 安装 Cloudera Docker 环境
+*** 安装 Cloudera Docker 环境
 		看官网
-    - 导入数据
+*** 导入数据
 		数据在：https://github.com/datacharmer/test_db
 		导入数据到 Cloudera 的 Mysql 中
 		#+BEGIN_SRC shell
 		mysql -u root -p < employees.sql # 会提示输入密码 默认为 cloudera
 		mysql -u root -p -t < test_employees_md5.sql
 		#+END_SRC
-    - 使用 sqoop 导入数据到 Hive
+*** 使用 sqoop 导入数据到 Hive
 		#+BEGIN_SRC shell
 		sqoop import --connect jdbc:mysql://localhost:3306/employees --username root --password cloudera --table employees --hive-import
 		sqoop import --connect jdbc:mysql://localhost:3306/employees --username root --password cloudera --table salaries --hive-import
@@ -118,7 +118,7 @@ Sqoop 和 hive 练习
 		sqoop import --connect jdbc:mysql://localhost:3306/employees --username root --password cloudera --table departments --hive-import
 		sqoop import --connect jdbc:mysql://localhost:3306/employees --username root --password cloudera --table current_dept_emp --hive-import
 		#+END_SRC
-    - 查看一下导入的结果
+*** 查看一下导入的结果
 		#+BEGIN_SRC shell
 		show tables;
 		select count(*) from employees;

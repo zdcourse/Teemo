@@ -1,18 +1,18 @@
 * Teemo
-Sqoop和hive练习
 
 课程的要求
 #+BEGIN_QUOTE
-用sqoop将mysql网站的示例数据导入到hadoop中，使用hive进行查询、统计和分析
-数据下载和介绍网址： https://dev.mysql.com/doc/employee/en/
+用 sqoop 将 mysql 网站的示例数据导入到 hadoop 中，使用 hive 进行查询、统计和分析
+数据下载和介绍网址：https://dev.mysql.com/doc/employee/en/
 作为个人学习练习，不需要提交作业
 #+END_QUOTE
 
 
 ** 如何去做
-    1. 安装Cloudera Docker 环境
-	
-    2. 导入数据
+	1. 安装 Cloudera Docker 环境
+		具体看官网
+
+    2. 导入数据
 		数据在：https://github.com/datacharmer/test_db
 		导入数据到 Cloudera 的 Mysql 中
 		#+BEGIN_SRC shell
@@ -41,9 +41,3 @@ Sqoop和hive练习
 
 
 ** 使用 Hive 进行查询分析和统计
-	
-
-
-
-
-
